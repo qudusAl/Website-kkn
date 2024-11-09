@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | qudus website -KKN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon/icon tittle.png">
+</head>
+<body>
+  <header>
+    <img src="img/Logo Kampus Unuja.png" alt="Logo Kampus" class="logo">
+    <h1>KKN OBE UNIVERSITAS NURUL JADID</h1>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="icon/Home.png" alt="Home Icon" class="icon"> Home
+      </a>
+      <a href="about.html">
+        <img src="icon/About.png" alt="About Icon" class="icon"> About
+      </a>
+      <a href="contact.html">
+        <img src="icon/contact-mail.png" alt="Contact Icon" class="icon"> Contact
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <form id="contactForm">
+        <h2>Contact Me</h2>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="button" onclick="submitForm()">Kirim</button>
+      </form>
+      
+      <div class="contact-info">
+        <h3>Website Builder</h3>
+        <p>Nama: Abd Hannan Kudus</p>
+        <p>Alamat: Arjasa, Situbondo</p>
+          <ul>
+            <li>
+              <span>WhatsApp: </span>
+              <a href="https://wa.me/081217306442">+62 812-1730-6442</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>Email :</span>
+              <a href="mailto:baniqudus@gmail.com">baniqudus@gmail.com</a>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/qudus_adnan/"><img src="icontapk/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/hannan.seenger"><img src="icontapk/facebook.png" alt="Facebook"></a>
+            <a href="mailto:baniqudus@gmail.com"><img src="icon/emaill.png" alt="Email"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <!-- Footer content here -->
+  </footer>
+
+  <script>
+    function submitForm() {
+      // Get the form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Check if all fields are filled
+      if (name && email && message) {
+        // Display a success message (or send data to a server, email API, etc.)
+        alert("Terima kasih, " + name + "! Pesan Anda telah dikirim.");
+        
+        // Reset the form
+        document.getElementById('contactForm').reset();
+      } else {
+        alert("Silakan isi semua kolom yang diperlukan.");
+      }
+    }
+  </script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <p><img src="icon/icon tittle.png" alt="My Logo" style="width:65px; height:60px; vertical-align: middle;">website builder -</p>
+        <p>Perguruan Tinggi pesantren dengan visi unggul, inovatif dan berkeadaban dalam pengembangan Iptek berwawasan keindonesiaan.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/unujaofficial/"><img src="icontapk/instagram.png" alt="Instagram"></a>
+          <a href="https://www.x.com/unujaofficial/"><img src="icontapk/twitter.png" alt="Twitter"></a>
+          <a href="https://www.unuja.ac.id/"><img src="icontapk/social.png" alt="Google"></a>
+          <a href="https://id.linkedin.com/company/universitas-nurul-jadid"><img src="icontapk/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <div class="footer-section product">
+        <h3>Fakultas UNUJA</h3>
+        <ul>
+          <li><a href="https://fai.unuja.ac.id/">Fakultas Agama Islam</a></li>
+          <li><a href="https://ft.unuja.ac.id/">Fakultas Teknik</a></li>
+          <li><a href="https://fkes.unuja.ac.id/">Fakultas Kesehatan</a></li>
+          <li><a href="https://soshum.unuja.ac.id/">Fakultas Sosial dan Humaniora</a></li>
+          <li><a href="https://pasca.unuja.ac.id/">Program Pasca Sarjana</a></li>
+        </ul>
+      </div>
+      <div class="footer-section links">
+        <h3>About UNUJA</h3>
+        <ul>
+          <li>
+            <a href="https://www.google.com/maps/place/Universitas+Nurul+Jadid/">
+              <img src="icon/maps-and-flags.png" alt="Map Icon" style="width:16px; height:16px; vertical-align: middle;">
+              Lihat di Peta
+            </a>
+          </li>
+          <li>
+            <a href="mailto:unuja@unuja.ac.id">
+              <img src="icon/email.png" alt="Email Icon" style="width:16px; height:16px; vertical-align: middle;">
+              unuja@unuja.ac.id
+            </a>
+          </li>
+          <li>
+            <p>
+              <img src="icon/printer.png" alt="Fax Icon" style="width:16px; height:16px; vertical-align: middle;">
+              Fax 0888 30 77077
+            </p>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-section contact">
+        <h3>Location</h3>
+        <p>Universitas Nurul Jadid (UNUJA)</p>
+        <p>Karanganyar, Paiton, Probolinggo,</p>
+        <p>Jawa Timur, Indonesia</p>
+        <p>Kode Pos: 67291</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
